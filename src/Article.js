@@ -22,10 +22,12 @@ const Article = props => {
       {!isEmpty(article) && (
         <>
           <h1>{article.title}</h1>
-          <img
-            src={`http://localhost:1337${article.image[0].formats.thumbnail.url}`}
-            style={{ width: '50%' }}
-          />
+          {article.image.length > 0 && (
+            <img
+              src={`http://localhost:1337${article.image[0].formats.thumbnail.url}`}
+              style={{ width: '50%' }}
+            />
+          )}
           <div
             dangerouslySetInnerHTML={{
               __html: marked(article.content),

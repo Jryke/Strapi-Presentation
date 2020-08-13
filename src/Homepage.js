@@ -27,9 +27,12 @@ const Homepage = () => {
             }}
             key={article.slug}
           >
-            <img
-              src={`http://localhost:1337${article.image[0].formats.thumbnail.url}`}
-            />
+            {article.image.length > 0 && (
+              <img
+                src={`http://localhost:1337${article.image[0].formats.thumbnail.url}`}
+                alt='No Image'
+              />
+            )}
             <hr></hr>
             <h3>{article.title}</h3>
             <div
