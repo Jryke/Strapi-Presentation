@@ -1,68 +1,40 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Strapi API / Headless CMS Presentation
 
-## Available Scripts
+### General Information
 
-In the project directory, you can run:
+#### What You Will Learn
+In this presentation we will create a simple blog using the Strapi API.  While building the blog, you will learn about how to use Strapi, the main features that are built into Strapi and how to customize Strapi.  You will find that Strapi is easy to use while still being highly customizable.   
 
-### `yarn start`
+#### This Repo
+This repo contains the React front-end for the blog that will be built during the presentation.  Because the presentation is focused on Strapi (not React), all of the front-end code needed to follow along is included in this repo.  The Strapi back-end will be built step-by-step throughout the presentation.
+## 
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Getting Started 
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+#### Clone The React App
+`git clone https://github.com/Jryke/Strapi-Presentation.git`
 
-### `yarn test`
+#### Create The Strapi Project
+1. Install Strapi and create a project with “quickstart”:
+ * NPM: `npx create-strapi-app my-project --quickstart`
+ * YARN: `yarn create strapi-app my-project --quickstart`
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Create an admin user and log into the Strapi admin panel 
+## 
 
-### `yarn build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+### Developing With Strapi 
+#### (follow along with the presentation)
+1. Create a content type
+ * Create an article content type
+1. Create content using the Strapi CMS
+ * Create an article using the content type fields
+1. Using relational fields
+ * Associate an author (user) to the blog post 
+1. Using Roles & Permissions plugin
+ * make articles public by utilizing Strapi Roles & Permissions plugin
+1. Fetching data from Strapi API on front-end
+ * Start the React App (from this repo) to see the blog posts render on the front-end
+1. Custom Strapi endpoints/controllers
+ * create a custom controller to fetch articles by their slug (Strapi core controller fetches by id)
+ * create a custom endpoint that utilizes the custom controller
+ * _**Note**: custom controller must be created/saved before custom endpoint or the server will crash.  If server crashes, restart using `npm run develop` or `yarn develop`._
