@@ -16,6 +16,9 @@ const Homepage = () => {
   return (
     <div style={{ margin: '5rem' }}>
       <h1>Blog Posts</h1>
+      <Link to='/create'>
+        <button style={{ marginBottom: '1.5rem' }}>Create New Post</button>
+      </Link>
       {articles.map(article => {
         return (
           <div
