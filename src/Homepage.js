@@ -14,7 +14,10 @@ const Homepage = () => {
   }
 
   return (
-    <div style={{ margin: '5rem' }}>
+    <div style={{ margin: '1rem 5rem 0 5rem' }}>
+      <Link to='/register' style={{ margin: '2rem 0 2rem 0' }}>
+        <button>Register User</button>
+      </Link>
       <h1>Blog Posts</h1>
       <Link to='/create'>
         <button style={{ marginBottom: '1.5rem' }}>Create New Post</button>
@@ -24,10 +27,11 @@ const Homepage = () => {
           return (
             <div
               style={{
-                border: '1px solid grey',
+                border: '2px solid grey',
                 width: '15rem',
                 borderRadius: '.5rem',
                 padding: '1rem',
+                marginBottom: '1rem',
               }}
               key={article.slug}
             >
@@ -35,15 +39,20 @@ const Homepage = () => {
                 <img
                   src={`http://localhost:1337${article.image[0].formats.thumbnail.url}`}
                   alt='No Image'
+                  style={{ height: '4rem' }}
                 />
               )}
-              <hr></hr>
+              <hr />
               <h3>{article.title}</h3>
               <div
                 dangerouslySetInnerHTML={{
                   __html: marked(article.content),
                 }}
               ></div>
+              <hr />
+              <p>
+                Author: {article.author ? article.author.username : 'unknown'}
+              </p>
               <Link to={`article/${article.slug}`}>
                 <button>Read more!</button>
               </Link>
