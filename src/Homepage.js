@@ -19,36 +19,38 @@ const Homepage = () => {
       <Link to='/create'>
         <button style={{ marginBottom: '1.5rem' }}>Create New Post</button>
       </Link>
-      {articles.map(article => {
-        return (
-          <div
-            style={{
-              border: '1px solid grey',
-              width: '15rem',
-              borderRadius: '.5rem',
-              padding: '1rem',
-            }}
-            key={article.slug}
-          >
-            {article.image.length > 0 && (
-              <img
-                src={`http://localhost:1337${article.image[0].formats.thumbnail.url}`}
-                alt='No Image'
-              />
-            )}
-            <hr></hr>
-            <h3>{article.title}</h3>
+      {articles.length > 0 &&
+        articles.map(article => {
+          return (
             <div
-              dangerouslySetInnerHTML={{
-                __html: marked(article.content),
+              style={{
+                border: '1px solid grey',
+                width: '15rem',
+                borderRadius: '.5rem',
+                padding: '1rem',
               }}
-            ></div>
-            <Link to={`article/${article.slug}`}>
-              <button>Read more!</button>
-            </Link>
-          </div>
-        )
-      })}
+              key={article.slug}
+            >
+              {article.image.length > 0 && (
+                <img
+                  src={`http://localhost:1337${article.image[0].formats.thumbnail.url}`}
+                  alt='No Image'
+                />
+              )}
+              <hr></hr>
+              <h3>{article.title}</h3>
+              <div
+                dangerouslySetInnerHTML={{
+                  __html: marked(article.content),
+                }}
+              ></div>
+              <Link to={`article/${article.slug}`}>
+                <button>Read more!</button>
+              </Link>
+            </div>
+          )
+        })}
+      {articles.length === 0 && <h3>No posts</h3>}
     </div>
   )
 }
