@@ -19,22 +19,22 @@ This repo contains the React front-end for the blog that will be built during th
  * NPM: `npx create-strapi-app my-project --quickstart`
  * YARN: `yarn create strapi-app my-project --quickstart`
 
-1. Create an admin user and log into the Strapi admin panel 
+2. Create an admin user and log into the Strapi admin panel 
 ## 
 
 ### Developing With Strapi 
 #### (follow along with the presentation)
 1. Create a content type
  * Create an article content type
-1. Create content using the Strapi CMS
+2. Create content using the Strapi CMS
  * Create an article using the content type fields
-1. Using relational fields
+3. Using relational fields
  * Associate an author (user) to the blog post 
-1. Using Roles & Permissions plugin
+4. Using Roles & Permissions plugin
  * make articles public by utilizing Strapi Roles & Permissions plugin
-1. Fetching data from Strapi API on front-end
+5. Fetching data from Strapi API on front-end
  * Start the React App (from this repo) to see the blog posts render on the front-end
-1. Custom Strapi endpoints/controllers
+6. Custom Strapi endpoints/controllers
  * create a custom controller to fetch articles by their slug (Strapi core controller fetches by id)
  * create a custom endpoint that utilizes the custom controller
  * _**Note**: custom controller must be created/saved before custom endpoint or the server will crash.  If server crashes, restart using `npm run develop` or `yarn develop`._
