@@ -1,8 +1,10 @@
+<img src="https://www.thebostoncalendar.com/system/events/photos/000/133/470/medium/boston-meetup-logo_(1).png?1495441976" width="auto" height="60" style="float: left; margin-right: 10px" /> &nbsp; &nbsp; <img src="https://www.strapi.io/hs-fs/hubfs/Logo.WhiteBackground%20(2)-2.png?width=1138&name=Logo.WhiteBackground%20(2)-2.png" width="auto" height="60" />
+
 # Strapi API / Headless CMS Presentation
 
 ### General Information
 
-#### This is a presentation at the [JAMstack Boston](https://www.meetup.com/JAMstack-Boston/events/272069365/) virtual meetup on August 18, 2020
+#### This is a presentation for the [JAMstack Boston](https://www.meetup.com/JAMstack-Boston/events/272069365/) virtual meetup on August 18, 2020
 [Presentation Video](https://www.youtube.com/watch?v=BJkI4xKuI6M&feature=youtu.be)  
 [Presentation Slides](https://docs.google.com/presentation/d/e/2PACX-1vS8kLKqpF26qjAElQXqtVL62urtDaC1Shg8iYNObLctVd7pkin84Zh976-r4_tFGf3_iawWAYSUyyc5/pub?start=true&loop=false&delayms=10000)
 
