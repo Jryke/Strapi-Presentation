@@ -2,6 +2,10 @@
 
 ### General Information
 
+#### This is a presentation at the [JAMstack Boston](https://www.meetup.com/JAMstack-Boston/events/272069365/) virtual meetup on August 18, 2020
+[Presentation Video](https://www.youtube.com/watch?v=BJkI4xKuI6M&feature=youtu.be)  
+[Presentation Slides](https://docs.google.com/presentation/d/e/2PACX-1vS8kLKqpF26qjAElQXqtVL62urtDaC1Shg8iYNObLctVd7pkin84Zh976-r4_tFGf3_iawWAYSUyyc5/pub?start=true&loop=false&delayms=10000)
+
 #### What You Will Learn
 In this presentation we will create a simple blog using the Strapi API.  While building the blog, you will learn about how to use Strapi, the main features that are built into Strapi and how to customize Strapi.  You will find that Strapi is easy to use while still being highly customizable.   
 
