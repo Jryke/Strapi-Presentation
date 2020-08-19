@@ -12,7 +12,7 @@
 In this presentation we will create a simple blog using the Strapi API.  While building the blog, you will learn about how to use Strapi, the main features that are built into Strapi and how to customize Strapi.  You will find that Strapi is easy to use while still being highly customizable.   
 
 #### This Repo
-This repo contains the React front-end for the blog that will be built during the presentation.  Because the presentation is focused on Strapi (not React), all of the front-end code needed to follow along is included in this repo.  The Strapi back-end will be built step-by-step throughout the presentation.
+This repo contains the React front-end for the blog that will be built during the presentation.  Because the presentation is focused on Strapi (not React), all of the front-end code needed to follow along is included in this repo.  The Strapi back-end will be built step-by-step throughout the presentation.  You can follow along with the [presentation](https://www.youtube.com/watch?v=BJkI4xKuI6M&feature=youtu.be) and build the backend on your own.  
 ## 
 
 ### Getting Started 
